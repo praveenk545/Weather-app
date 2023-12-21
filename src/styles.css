@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgb(255, 255, 255), rgba(129, 129, 150, 0.678));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 400px;
+  height: 80vh;
+  background: linear-gradient(rgb(255, 245, 245), rgba(70, 70, 165, 0.842));
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.upper-data {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.lower-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.upper-data img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.weather-data {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.274);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.location {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: monospace;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.tempreature {
+  color: #fff;
+  font-weight: 900;
+  font-size: 4em;
+  text-align: center;
+}
+.more-info-container {
+  flex: 1;
+  margin-top: 1em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.274);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info-block {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.info-block-label {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info-block-label svg {
+  width: 4em;
+  color: rgb(154, 238, 217);
+}
+.info-block-label span {
+  color: #fff;
+  font-size: 0.8em;
+}
+.info-block-value {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+.more-info-label {
+  color: antiquewhite;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
