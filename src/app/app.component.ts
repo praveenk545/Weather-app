@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
   api: any;
   apiVal: any;
-
+  public message = 'Warning';
   constructor(
     private weatherservice: WeatherService,
     private ipservice: IpserviceService,
@@ -41,7 +41,13 @@ export class AppComponent implements OnInit {
 
   apifind(formValues: any) {
     this.ipservice.getApi(formValues.location).subscribe((data: any) => {
-      this.api = Array.of(data);
+      this.api = Array.of(data, formValues);
+      // if (0 >= formValues.length) {
+      //   alert(this.message);
+      // } else {
+      //   alert(this.message);
+      // }
+
       console.log('IPADDRESS', this.api);
     });
   }

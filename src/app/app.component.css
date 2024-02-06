@@ -1,0 +1,14 @@
+.animation {
+  cursor: pointer;
+  transition: 0.5s;
+  /* transition: transform 330ms ease-in-out; */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 1em;
+  border-top: 3px solid orange;
+}
+.animation:hover {
+  /* transform: translateX(300);
+  transform: 1s; */
+  transform: scale(1.05, 1.05);
+}
