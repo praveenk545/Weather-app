@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { environment } from 'src/environments/environment';
+import * as _ from 'lodash';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({

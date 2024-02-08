@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import * as _ from 'lodash';
 
 import { Observable } from 'rxjs';
 import { weatherData } from '../models/weather.models';
